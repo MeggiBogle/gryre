@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gryre — Официальное заявление</title>
     
-    <!-- Подключаем Tailwind CSS для работы твоих классов (mb-24, flex и т.д.) -->
+    <!-- Подключаем Tailwind, чтобы работали классы mb-24, flex, и т.д. -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Подключаем шрифт Cinzel -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 
     <style>
-        body {
-            background-color: #000; /* Фон должен быть темным для твоего манифеста */
-            color: #ffffff;
-            margin: 0;
-        }
+        /* Дополнительные настройки для шрифтов и кастомных элементов */
         .font-cinzel { font-family: 'Cinzel', serif; }
-        .letter-spacing-huge { letter-spacing: 0.5em; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .letter-spacing-huge { letter-spacing: 0.8em; }
         .isa-line {
             height: 1px;
-            width: 60px;
-            background: rgba(255,255,255,0.2);
+            width: 80px;
+            background: rgba(255, 255, 255, 0.2);
         }
+        body { background-color: #000; color: #fff; }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black">
+<body class="flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black text-white selection:bg-white selection:text-black">
 
     <!-- Header Section -->
     <header class="mb-24 animate-pulse">
-        <h1 class="font-cinzel text-5xl md:text-7xl font-bold letter-spacing-huge mb-4 uppercase">
+        <h1 class="font-cinzel text-5xl md:text-7xl font-bold letter-spacing-huge mb-6 uppercase">
             GRYRE
         </h1>
         <p class="font-mono text-[10px] opacity-40 tracking-[0.5em] uppercase">
@@ -38,12 +36,12 @@
         </p>
     </header>
 
-    <!-- Разделитель -->
-    <div class="isa-line mb-24 mx-auto"></div>
+    <!-- The ISA Line -->
+    <div class="isa-line mb-24"></div>
 
     <!-- Main Manifesto Section -->
     <section class="max-w-4xl mx-auto mb-32 px-4">
-        <h2 class="font-cinzel text-xl md:text-3xl leading-relaxed tracking-[0.3em] uppercase text-white font-bold mb-12">
+        <h2 class="font-cinzel text-xl md:text-3xl leading-relaxed tracking-[0.3em] uppercase font-bold mb-12">
             Beyond every outdated pattern, GRYRE crystallizes the inevitable truth of quantum absolute zero.
         </h2>
 
@@ -56,7 +54,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="mt-20 font-mono text-[9px] tracking-[0.8em] opacity-20 hover:opacity-60 transition duration-700 uppercase cursor-crosshair">
+    <footer class="mt-20 font-mono text-[9px] tracking-[0.8em] opacity-20 hover:opacity-80 transition duration-700 uppercase cursor-crosshair">
         [ VANGUARD_NODE_ACTIVE ]
     </footer>
 
