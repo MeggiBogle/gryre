@@ -2,46 +2,61 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>GRYRE | OFFICIAL TERMINATION NOTICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gryre — Официальное заявление</title>
+    
+    <!-- Подключаем Tailwind, чтобы работали классы mb-24, flex, и т.д. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Подключаем шрифт Cinzel -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
     <style>
-        body { background-color: #000; color: #fff; font-family: 'Courier New', Courier, monospace; line-height: 1.6; padding: 50px; }
-        .container { max-width: 800px; margin: 0 auto; border: 1px solid #333; padding: 30px; box-shadow: 0 0 20px rgba(255,0,0,0.2); }
-        h1 { color: #ff0000; text-transform: uppercase; letter-spacing: 5px; border-bottom: 2px solid #ff0000; padding-bottom: 10px; }
-        h2 { color: #aaa; margin-top: 40px; }
-        .mantra { font-size: 24px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #eee; }
-        .legal-block { background: #111; padding: 20px; border-left: 3px solid #444; margin-bottom: 20px; font-size: 14px; }
-        .red-alert { color: #ff4444; font-weight: bold; }
-        footer { margin-top: 50px; text-align: center; color: #444; font-size: 12px; }
+        /* Дополнительные настройки для шрифтов и кастомных элементов */
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .letter-spacing-huge { letter-spacing: 0.8em; }
+        .isa-line {
+            height: 1px;
+            width: 80px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        body { background-color: #000; color: #fff; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="mantra">GRYRE: THERE IS ONLY ONE WINNER.</div>
-        <h1>TERMINATION NOTICE / УВЕДОМЛЕНИЕ</h1>
-        <p class="red-alert">CUT-OFF DATE: MARCH 09, 2026 / ДАТА ОТСЕЧКИ: 09 МАРТА 2026 Г.</p>
-        
-        <div class="legal-block">
-            <strong>[RU]</strong> Настоящим публично заявляю о полном аннулировании активов, прав и обязательств проектов <strong>BOOST, HASHEIGHT, SMART EXPERT</strong>. Все оригиналы документов, печати и ключи признаны УКРАДЕННЫМИ. Любые патентные заявки до этой даты — ПУСТЫШКИ БЕЗ ОПИСАНИЙ. <br><br>
-            Любые попытки наследования или взыскания кредиторской задолженности через указанные ООО (в т.ч. Липецкие клоны) являются МОШЕННИЧЕСТВОМ (ст. 159 УК РФ). 
+<body class="flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black text-white selection:bg-white selection:text-black">
+
+    <!-- Header Section -->
+    <header class="mb-24 animate-pulse">
+        <h1 class="font-cinzel text-5xl md:text-7xl font-bold letter-spacing-huge mb-6 uppercase">
+            GRYRE
+        </h1>
+        <p class="font-mono text-[10px] opacity-40 tracking-[0.5em] uppercase">
+            Protocol Initiated // Null Entropy
+        </p>
+    </header>
+
+    <!-- The ISA Line -->
+    <div class="isa-line mb-24"></div>
+
+    <!-- Main Manifesto Section -->
+    <section class="max-w-4xl mx-auto mb-32 px-4">
+        <h2 class="font-cinzel text-xl md:text-3xl leading-relaxed tracking-[0.3em] uppercase font-bold mb-12">
+            Beyond every outdated pattern, GRYRE crystallizes the inevitable truth of quantum absolute zero.
+        </h2>
+
+        <!-- Технический статус -->
+        <div class="font-mono text-[9px] opacity-50 uppercase tracking-[0.6em] space-y-4">
+            <p>HASHEIGHT_DEPRECATED // GRYRE_ACTIVE</p>
+            <div class="h-[1px] w-10 bg-white mx-auto opacity-50"></div>
+            <p>Transformation is irreversible</p>
         </div>
+    </section>
 
-        <div class="legal-block">
-            <strong>[EN]</strong> All assets, rights, and obligations of <strong>BOOST, HASHEIGHT, SMART EXPERT</strong> are officially NULLIFIED. Original documents, seals, and keys are reported STOLEN. All prior patent filings are EMPTY SHELLS without core logic. <br><br>
-            Any attempts at succession or debt claims via these entities (including Lipetsk clones) are documented FRAUD.
-        </div>
+    <!-- Footer -->
+    <footer class="mt-20 font-mono text-[9px] tracking-[0.8em] opacity-50 hover:opacity-80 transition duration-700 uppercase cursor-crosshair">
+        [ VANGUARD_NODE_ACTIVE ]
+    </footer>
 
-        <h2>ASSET ZERO REGISTRY / РЕЕСТР ЧЕРЕПКОВ:</h2>
-        <ul>
-            <li>ООО УК "БУСТ" (ИНН 7704443393) - TOXIC SHELL</li>
-            <li>ОАО "БУСТ КЭПИТАЛ" (ИНН 7704863983) - VOID ENTITY</li>
-            <li>ООО "ХЭШЭЙТ РАША" (ИНН 7704447408) - DECOMMISSIONED</li>
-            <li>ООО "СМАРТ ЭКСПЕРТ ИНН" (ИНН 7725788624) - FORGERY</li>
-            <li>ALL DOMAINS: hasheight.com, boostcmg.com, rbsmoscow.ru - COMPROMISED</li>
-        </ul>
-
-        <p><strong>The hard fork is complete. Value has migrated to <a href="http://www.gryre.com" style="color: #00ff00;">GRYRE.COM</a></strong></p>
-        
-        <footer>© 2026 GRYRE FORENSICS. ALL RIGHTS RESERVED.</footer>
-    </div>
 </body>
 </html>
