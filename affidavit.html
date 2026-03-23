@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFFIDAVIT | GRYRE Protocol Enforcement</title>
+    <title>AFFIDAVIT | GRYRE Legal Protocol</title>
     <style>
-        body { margin: 0; background: #01020F; color: #FFFFFF; font-family: 'Inter', sans-serif; text-align: center; }
-        .container { padding: 50px 5%; }
-        .back-link { color: #4DA6FF; text-decoration: none; font-weight: bold; display: block; margin-bottom: 30px; }
-        .pdf-viewer { width: 100%; height: 90vh; border: 1px solid #FF2D00; background: #000; }
-        .hash-box { background: rgba(255, 45, 0, 0.1); border: 1px dashed #FF2D00; padding: 15px; margin-top: 20px; font-family: monospace; font-size: 0.9rem; }
+        body { margin: 0; background: #01020F; color: #FFFFFF; font-family: 'Inter', sans-serif; text-align: center; overflow-x: hidden; }
+        .nav { padding: 20px; background: rgba(0,0,0,0.8); border-bottom: 1px solid #FF2D00; }
+        .back-link { color: #4DA6FF; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; }
+        .pdf-container { width: 100%; height: 85vh; margin-top: 10px; }
+        .integrity-footer { padding: 20px; background: #000; border-top: 1px solid #333; font-family: monospace; font-size: 0.75rem; }
+        .hash-code { color: #FF2D00; word-break: break-all; margin: 10px 0; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">← RETURN TO GRYRE MAIN CONTROL</a>
-        <h1>AFFIDAVIT OF TRUTH</h1>
-        <p>Public Record / Invocation of the Slayer Rule</p>
-        
-        <!-- Встраивание PDF -->
-        <iframe src="affidavit.pdf" class="pdf-viewer"></iframe>
 
-        <div class="hash-box">
-            VERIFIED HASH (SHA-256): [Здесь можно вписать хэш вашего файла для защиты от подмены]
-        </div>
+    <nav class="nav">
+        <a href="index.html" class="back-link">← RETURN TO CORE CONTROL</a>
+    </nav>
+
+    <div class="pdf-container">
+        <!-- Встраивание вашего PDF-файла -->
+        <iframe src="affidavit.pdf" width="100%" height="100%" style="border: none;"></iframe>
     </div>
+
+    <footer class="integrity-footer">
+        <div>>>> GRYRE INTEGRITY PROTOCOL [ACTIVE]</div>
+        <div class="hash-code">SHA-256: 1d9ce396a2fa51973017f6e89a3fed22de701aefe76c3c32e5065a2b04f98fae</div>
+        <div style="color: #4DA6FF;">STATUS: IMMUTABLE PUBLIC RECORD / TIME-STAMPED VIA GITHUB</div>
+    </footer>
+
 </body>
 </html>
