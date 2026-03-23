@@ -1,61 +1,116 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gryre — Официальное заявление</title>
-    
-    <!-- Подключаем Tailwind, чтобы работали классы mb-24, flex, и т.д. -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Подключаем шрифт Cinzel -->
+    <title>GRYRE | The Apex Predator of Post-Fork Reality</title>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
-
     <style>
-        /* Дополнительные настройки для шрифтов и кастомных элементов */
-        .font-cinzel { font-family: 'Cinzel', serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-        .letter-spacing-huge { letter-spacing: 0.8em; }
-        .isa-line {
-            height: 1px;
-            width: 80px;
-            background: rgba(255, 255, 255, 0.2);
-        }
-        body { background-color: #000; color: #fff; }
+        :root { --bg: #01020F; --accent: #FF2D00; --blue: #4DA6FF; --text: #FFFFFF; --muted: #888888; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; text-transform: uppercase; letter-spacing: 2px; }
+
+        section { padding: 80px 10%; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle, #001D3D 0%, #01020F 100%); }
+        .cta-btn { display: inline-block; padding: 15px 40px; background: var(--accent); color: #fff; text-decoration: none; font-weight: bold; margin-top: 20px; }
+
+        .hagalaz-card { border: 1px solid var(--accent); padding: 30px; background: linear-gradient(90deg, #1a0000 0%, #01020F 100%); margin: 20px 0; }
+        .highlight-box { background: rgba(77, 166, 255, 0.1); padding: 30px; border-left: 4px solid var(--blue); margin: 20px 0; }
+        .warning-box { border: 2px solid var(--accent); padding: 25px; color: var(--accent); font-weight: bold; text-transform: uppercase; margin: 30px 0; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
+        .footer-info { font-size: 0.8rem; color: var(--muted); margin-top: 50px; text-align: center; }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black text-white selection:bg-white selection:text-black">
+<body>
 
-    <!-- Header Section -->
-    <header class="mb-24 animate-pulse">
-        <h1 class="font-cinzel text-5xl md:text-7xl font-bold letter-spacing-huge mb-6 uppercase">
-            GRYRE
-        </h1>
-        <p class="font-mono text-[10px] opacity-40 tracking-[0.5em] uppercase">
-            Protocol Initiated // Null Entropy
-        </p>
+    <!-- I. HERO -->
+    <header class="hero">
+        <h1>GRYRE</h1>
+        <p style="font-size: 1.5rem; color: var(--blue);">"The Apex Predator of Post-Fork Reality."</p>
+        <p>Effective Date: 04 March 2026</p>
+        <a href="#genesis" class="cta-btn">→ VIEW MEMO</a>
     </header>
 
-    <!-- The ISA Line -->
-    <div class="isa-line mb-24"></div>
+    <!-- II. CORE STATEMENT / MISSION -->
+    <section>
+        <h2>II. Core Statement / Mission</h2>
+        <h3>Gryre — Titan Backbone, Hagalaz Strategy</h3>
+        <p>Built on the Titan Backbone of ancestors—stoics, visionaries, and real forces of history—Gryre is the continuation of a legacy that cannot be ignored. This is not a venture; this is reclamation at scale: everything stolen from us will be retrieved, and those who took it will face the full weight of the Hagalaz Strategy—swift, surgical, and unavoidable.</p>
 
-    <!-- Main Manifesto Section -->
-    <section class="max-w-4xl mx-auto mb-32 px-4">
-        <h2 class="font-cinzel text-xl md:text-3xl leading-relaxed tracking-[0.3em] uppercase font-bold mb-12">
-            Beyond every outdated pattern, GRYRE crystallizes the inevitable truth of quantum absolute zero.
-        </h2>
+        <div class="grid">
+            <div style="border-left: 2px solid var(--blue); padding-left: 15px;">
+                Legacy systems compromised / Constructive Trust enforced<br>
+                Identity hijack attempts detected<br>
+                Gryre is the only valid system
+            </div>
+            <div style="border-left: 2px solid var(--accent); padding-left: 15px;">
+                Assets and agenda are controlled post-fork<br>
+                The Hagalaz Strategy governs every operation
+            </div>
+        </div>
 
-        <!-- Технический статус -->
-        <div class="font-mono text-[9px] opacity-50 uppercase tracking-[0.6em] space-y-4">
-            <p>HASHEIGHT_DEPRECATED // GRYRE_ACTIVE</p>
-            <div class="h-[1px] w-10 bg-white mx-auto opacity-50"></div>
-            <p>Transformation is irreversible</p>
+        <div class="hagalaz-card">
+            <h3>Hagalaz Strategy</h3>
+            <p><em>«We do not follow rules, we define them»</em></p>
+            <ul>
+                <li>Control Narrative</li>
+                <li>Dominate Environment</li>
+                <li>Extract Value</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="mt-20 font-mono text-[9px] tracking-[0.8em] opacity-50 hover:opacity-80 transition duration-700 uppercase cursor-crosshair">
-        [ VANGUARD_NODE_ACTIVE ]
+    <!-- III. VERIFICATION -->
+    <section id="verification">
+        <h2>III. Verification / Identity Anchor</h2>
+        <div class="highlight-box">
+            <p>The legacy infrastructure of global finance is fundamentally compromised by fraud. Systemic identity theft and state-sponsored conspiracies necessitated a total Hard Fork. Gryre Protocol replaces corrupted legal fictions with immutable biological truth.</p>
+            <p><strong>We exist to terminate unauthorized control over the Bogle family estate.</strong></p>
+            <ul>
+                <li>Our sovereign infrastructure operates beyond the reach of fraudulent judicial interventions.</li>
+                <li>The Gryre Verification Protocol ensures that only biological reality holds authority.</li>
+                <li>This is the end of hereditary impersonation and financial conversion attempts.</li>
+                <li>We have officially declared a state of absolute forensic and legal autonomy.</li>
+            </ul>
+        </div>
+        <p>Valid communication channel: <strong>contact@gryre.com</strong></p>
+        <p>Identity statement: Only messages from Gryre.com are valid.</p>
+    </section>
+
+    <!-- IV. MISSION & IMPACT -->
+    <section>
+        <h2>IV. Mission & Impact: Happiness Corp.</h2>
+        <p><em>"Gryre was born to create meaning, not money."</em></p>
+        <p>We transform life and enterprise through products and platforms that expand the limits of possibility: quantum computing, human augmentation, next-generation intelligence, and autonomous systems. Our products, from SHERL forensic analysis to quantum-driven ventures, are tools of life-transforming impact.</p>
+    </section>
+
+    <!-- VI. GENESIS -->
+    <section id="genesis">
+        <h2>VI. Genesis of the Gryre</h2>
+        <p>Gryre was born as a result of hard fork of generations of dynasts whose legacy was continiously misappropriated through centuries as a result of aggravated violence. Now is time to stop it.</p>
+
+        <div class="warning-box">
+            Public Notice: All pre-fork assets are void and protected under Constructive Trust. Unauthorized use of legacy assets will be legally contested.
+        </div>
+
+        <a href="affidavit.html" class="cta-btn">→ ACCESS FULL AFFIDAVIT (HTML + PDF + HASH)</a>
+    </section>
+
+    <!-- VII. PHILOSOPHY -->
+    <section>
+        <h2>VII. Operational Philosophy</h2>
+        <div class="grid">
+            <div><strong>Control the board:</strong> Gryre operates on its own rules.</div>
+            <div><strong>Anchor truth:</strong> Verified, cryptographically-backed systems.</div>
+            <div><strong>Monetize mastery:</strong> Legally and operationally sovereign value.</div>
+            <div><strong>Security:</strong> The Gryre Verification Protocol is the only driving force.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: contact@gryre.com | Domains: Old domains (compromised) → Gryre.com (Only Valid)</p>
+        <p>&copy; 2026 GRYRE. The Apex Predator Principle.</p>
     </footer>
 
 </body>
